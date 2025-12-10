@@ -1,0 +1,42 @@
+<?php
+
+namespace App\API;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
+class pesanHO extends Model
+{
+
+	public function getAbsensiRekap($nik,$periode=null)
+	{
+		$absensi = DB::select(DB::raw("select * from absen_rkp where nik = '".$nik."' && th_bln = '".$periode."' group by th_bln"));
+		if($periode == "") {
+			$absensi = DB::select(DB::raw("select * from absen_rkp where nik = '".$nik."' group by th_bln"));
+		}
+		
+		return $absensi;
+	}
+
+	public function getAbsensiDetail($nik,$periode=null)
+	{
+		$absensi = DB::select(DB::raw("select * from absen_det where nik = '".$nik."' && th_bln = '".$periode."'"));
+		if($periode == "") {
+			$absensi = DB::select(DB::raw("select * from absen_det where nik = '".$nik."'"));
+		}
+		
+		return $absensi;
+	}
+
+	public function getAbsensi($nik,$periode=null)
+	{
+		$absensi = DB::select(DB::raw("select nik,th_bln as periode,flag_msk as hk,hke from absen_rkp where nik = '".$nik."' && th_bln = '".$periode."' group by th_bln"));
+		if($periode == "") {
+			$absensi = DB::select(DB::raw("select nik,th_bln as periode,flag_msk as hk,hke from absen_rkp where nik = '".$nik."' group by th_bln"));
+		}
+		
+		return $absensi;
+	}
+
+
+}

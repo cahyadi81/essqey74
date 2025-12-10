@@ -1,0 +1,12 @@
+/vendor/
+/node_modules/
+/storage/logs/
+/storage/app/public/
+/storage/framework/
+/public/storage/
+/public/uploads/
+.env
+*.zip
+*.tar.gz
+*.rar
+*.bak

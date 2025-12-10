@@ -1,0 +1,26 @@
+# phpunit.xml
+# CHANGELOG
+# README.md
+# artisan
+# composer.json
+# composer.lock
+# composer-setup.php
+# gitignore
+# package.json
+# server.bat
+# server.php
+# sudo
+# webpack.mix.js
+# .env
+# .env.example
+vendor/*
+# .gitignore
+# bootstrap/cache/*
+# bootstrap/cache/packages.php
+# bootstrap/cache/services.php
+# storage/logs/*
+node_modules/
+storage/
+public/uploads/
+*.zip
+*.tar.gz

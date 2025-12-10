@@ -1,0 +1,43 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+.env
+.env.example
+.env.swk
+.env.swl
+        .env.swm
+        .env.swn
+        .env.swo
+        .env.swp
+        .vscode/
+        CHANGELOG
+        artisan
+        bootstrap/
+        composer-setup.php
+        composer.json
+        composer.lock
+        config/
+        database/
+        gitignore
+        package.json
+        phpunit.xml
+        public/
+        readme.md
+        resources/
+        routes/
+        server.bat
+        server.php
+        storage/
+        sudo
+        tests/
+        vendor/
+        webpack.mix.js
